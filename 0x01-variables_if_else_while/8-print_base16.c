@@ -1,26 +1,22 @@
-include <stdio.h>
-
+#include <stdio.h>
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+ * main - entry point
+ * Return: Always (0)
+ * /
+
 int main(void)
 {
-	int d = 48;
-	char c = 'a';
+	int n;
+	char ch;
 
-	while (d < 58)
+	for (n = 48; n < 58; n++)
 	{
-		putchar(d);
-		d++;
+		putchar(n);
 	}
-	while (c <= 'f')
+	for (ch = 'a'; ch <= 'f'; ch++)
 	{
-		putchar(c);
-		c++;
+		putchar(ch);
 	}
 	putchar('\n');
-
 	return (0);
 }
