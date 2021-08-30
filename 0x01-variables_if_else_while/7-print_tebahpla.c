@@ -1,10 +1,9 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Program that prints the lowercase alphabet line.
- * 
- * Return: Always 0 (Success)
- */
+ * main - entry point
+ * Return: Always (0)
+*/
 
 int main(void)
 {	char i;
