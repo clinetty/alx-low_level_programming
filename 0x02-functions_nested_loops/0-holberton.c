@@ -1,20 +1,23 @@
 #include "main.h"
+#include <string.h>
 
 /**
- * main - Entry point
- * Return: Always 0 (Success)
+ * main - prints Holberton
+ *
+ *Return: Always (0)
  */
 int main(void)
 {
-	_putchar('H');
-	_putchar('o');
-	_putchar('l');
-	_putchar('b');
-	_putchar('e');
-	_putchar('r');
-	_putchar('t');
-	_putchar('o');
-	_putchar('n');
+	char c[] = "Holberton";
+	int length, i;
+
+	length = strlen(c);
+
+	for (i = 0; i < length; i++)
+	{
+		_putchar(c[i]);
+	}
 	_putchar('\n');
+
 	return (0);
 }
