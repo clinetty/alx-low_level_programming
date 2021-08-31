@@ -1,5 +1,5 @@
-#include<stio.h>
-#include<main.h>
+#include "holberton.h"
+
 /**
  * main - program that prints Holberton, followed by a new line
  *
@@ -11,6 +11,7 @@ int main(void)
 	char ch = "Holberton";
 
 	putchar(ch);
+	putchar('\n');
 	return (0);
 
 }
