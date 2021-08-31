@@ -24,4 +24,4 @@ Task 10: Adds two integers and returns the result.
 
 Task 11: Prints all natural numbers from n to 98, followed by a new line.
 
-Task 12: Prints the n times table, starting with 0. 
+Task 12: Prints the n times table, starting with 0 
