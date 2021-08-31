@@ -8,10 +8,8 @@
 
 int main(void)
 {
-	char ch = "Holberton";
-
-	putchar(ch);
-	putchar('\n');
+	_putchar('Holberton');
+	_putchar('\n');
 	return (0);
 
 }
