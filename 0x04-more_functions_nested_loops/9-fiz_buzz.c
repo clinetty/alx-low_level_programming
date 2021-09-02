@@ -1,28 +1,34 @@
 #include <stdio.h>
-
+#include "main.h"
+/** Task Nine */
 /**
- * main - prints numbers from 1 to 100 followed by a new line and replaces
- * Fizz, Buzz or FizzBuzz if the number is a multiple of 3, 5
- *
- * Return: 0
+ * main - prints the numbers from 1 to 100, followed by a new line
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
-	int a = 1, i = 2;
+	int i;
 
-	printf("%d", a);
-	while (i < 101)
+	for (i = 1; i <= 100; i++)
 	{
-		if (i % 3 == 0 && i % 5 == 0)
-			printf(" FizzBuzz");
-		else if (i % 3 == 0)
+		if (i % 3 == 0 && i % 5 != 0)
+		{
 			printf(" Fizz");
-		else if (i % 5 == 0)
+		} else if (i % 5 == 0 && i % 3 != 0)
+		{
 			printf(" Buzz");
-		else
+		} else if (i % 3 == 0 && i % 5 == 0)
+		{
+			printf(" FizzBuzz");
+		} else if (i == 1)
+		{
+			printf("%d", i);
+		} else
+		{
 			printf(" %d", i);
-		i++;
+		}
 	}
 	printf("\n");
+
 	return (0);
 }
