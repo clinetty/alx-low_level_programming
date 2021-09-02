@@ -1,19 +1,16 @@
-#include "main.h"
-
+#include "holberton.h"
+/** Task 3 */
 /**
- * print_numbers - prints numbers from 0 to 9 without using standard functions
- *
- *
- * Return: void
+ * print_numbers - print numbers from 0 to 9 followed by a new line
  */
 void print_numbers(void)
 {
-	int c = 48;
+	int n;
 
-	while (c < 58)
+	for (n = 0; n < 10; n++)
 	{
-		_putchar(c);
-		c++;
+		_putchar(n + '0');
 	}
+
 	_putchar('\n');
 }
