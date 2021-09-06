@@ -4,12 +4,20 @@
  * strlen - returns length of a string
  *
  * @s : string to be counted
+ * return : length of string
  */
 
 int _strlen(char *s);
 {
-	int len;
+	int x;
 
-	len = strlen(s);
+	x = 0;
 
-}i
+	while (s[x] != '\0')
+	{
+		x++
+	}
+
+	return (x);
+
+}
