@@ -9,22 +9,23 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	unsigned int i, j, len = 0, match = 0;
+	unsigned int bytes = 0;
+	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (*s)
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		for (i = 0; accept[i]; i++)
 		{
-			if (s[i] == accept[j])
+			if (*s == accept[i])
 			{
-				len++;
+				bytes++;
 				break;
 			}
+			else if (accept[i + 1] == '\0')
+				return (bytes);
 		}
-		if (len != 0)
-			match++;
-		if (match != len)
-			return (len);
+		s++;
 	}
-	return (0);
+	return (bytes);
 }
+© 2021 GitHub, Inc.
