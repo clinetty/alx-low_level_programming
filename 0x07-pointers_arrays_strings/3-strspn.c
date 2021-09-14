@@ -28,4 +28,3 @@ unsigned int _strspn(char *s, char *accept)
 	}
 	return (bytes);
 }
-© 2021 GitHub, Inc.
