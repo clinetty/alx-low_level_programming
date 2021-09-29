@@ -7,23 +7,13 @@
  * @action: function pointer
  */
 
-void array_iterator(int *array, size_t size, void (*action)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	if (*action == NULL)
-	{
-		return;
-	}
-	if (array == NULL)
-	{
-		return;
-	}
-	else
-	{
-		unsigned int i;
+	int i;
 
+	if (array && cmp && size > 0)
 		for (i = 0; i < size; i++)
-		{
-			(action)(array[i]);
-		}
-	}
+			if (cmp(array[i]))
+				return (i);
+	return (-1);
 }
